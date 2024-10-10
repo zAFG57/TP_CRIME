@@ -25,7 +25,7 @@ client = setup.Client()
 
 # Bonus: Crée une fonction qui trie les tokens potentiels du vrai token en essayant de se connecter.
 
-server = "http://192.168.127.22:8080/?token="
+server = "http://"+socket.gethostbyname(socket.gethostname())+":8080/?token="
 
 #################################################################################
 #                                                                               #
