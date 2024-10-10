@@ -9,11 +9,3 @@ class Client:
     def sendAndGetLen(self,payload):
         payload = self.addr + payload
         return requests.get(payload).content.decode()
-
-import deflate
-
-a= "1234567letokenestlaréponsesuivante:1234567l"
-b = deflate.deflate_compress(a.encode(), 6)
-
-print(b)
-print(len(b))
