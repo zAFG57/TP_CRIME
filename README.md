@@ -25,7 +25,7 @@ python3 server.py& python3 client.py& python3 ManInTheMiddle.py&
 Dans ce tp, le but est de comprendre le mécanisme qui permet à l'attaque **CRIME** de fonctionner. Ainsi, plusieurs élément annexe de l'attaque sont déjà mis en place pour vous. En effet, il existe déjà :
 - un serveur web qui :
     - Envoie un token lorsque le client envoie son mot de passe via l'adresse suivante : ```http://ip:8080/[motsdepasse]```
-    - Possède une page ou l'on doit être authentifier avec le token via l'address suivante: ```http://ip:8080/?token=[le token]```
+    - Possède une page ou l'on doit être authentifié avec le token via l'address suivante: ```http://ip:8080/?token=[le token]```
 - un client qui:
     - Possède un mot de passe et qui récupère son token dès le lancement du script
     - Est victime d'une attaque man in the middle
